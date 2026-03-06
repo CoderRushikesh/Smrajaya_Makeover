@@ -12,7 +12,10 @@ const Footer = () => {
         {/* Left Section */}
         <div className="footer-left">
           
-          <h3>  <SiTurkishairlines style={{marginRight: "8px", color: "balck" , width:"50px" , height:"40px" , color:"white" ,}}/> Samrajya Makeover</h3>
+         <h3 style={{ marginRight: "8px", color: "white", width:"50px", height:"40px" }}>
+  Samrajya Makeover
+</h3>
+
           <p>Enhancing beauty, creating confidence.
 Thank you for visiting Makeup Samrajya. Stay connected with us on social media for bridal inspirations, tutorials, and academy updates..</p>
           <p>Thank you for visiting my personal website. Connect with me on socials!</p>
