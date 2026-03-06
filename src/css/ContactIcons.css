@@ -1,0 +1,38 @@
+.contact-icons {
+  background: #fff;
+  padding: 60px 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.icons-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* space between icons */
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.1);
+}
+
+.icon-link p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

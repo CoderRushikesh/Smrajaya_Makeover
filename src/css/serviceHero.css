@@ -1,0 +1,21 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* full viewport height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  
+}
+
+/* Overlay text box */
+
+
+/* .overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+} */
+

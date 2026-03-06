@@ -1,0 +1,37 @@
+.team-section {
+  background: #f9f9f9;
+  padding: 60px 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.team-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.team-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.team-info {
+  flex: 1;
+  color: #333;
+}
+
+.team-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.team-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

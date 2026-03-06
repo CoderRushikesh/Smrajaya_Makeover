@@ -1,0 +1,37 @@
+.owner-section {
+  background: #fff;
+  padding: 60px 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.owner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.owner-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.owner-info {
+  flex: 1;
+  color: #333;
+}
+
+.owner-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.owner-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

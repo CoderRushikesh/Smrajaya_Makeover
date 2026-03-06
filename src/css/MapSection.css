@@ -1,0 +1,34 @@
+.map-section {
+  background: #f9f9f9;
+  padding: 60px 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.map-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.map-info {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.map-frame {
+  flex: 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}

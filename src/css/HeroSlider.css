@@ -1,0 +1,116 @@
+.hero-slider {
+  position: relative;
+  height: 80vh;
+  /* ✅ default desktop height */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  /* fill container width */
+  height: 100%;
+  /* fill container height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: left 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0;
+  margin-top: 75px;
+  /* margin-left: 12px; */
+  /* margin-right: 122px; */
+}
+
+
+.slide.active {
+  left: 0;
+  opacity: 1;
+}
+
+.overlay {
+  margin-top: 122px;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  margin-left:50%;
+  margin-bottom: 20%;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+
+  background: rgba(0, 0, 0, 0.4);
+  /* semi-transparent black */
+  /* padding: 20px; */
+  border-radius: 8px;
+}
+
+
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #e91e63;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #e91e63;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 50vh;
+    /* smaller on tablets */
+  }
+
+  .overlay {
+    bottom: 10%;
+    left: 5%;
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 40vh;
+    /* even smaller on phones */
+  }
+
+  .overlay h1 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+}
+
