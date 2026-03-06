@@ -33,7 +33,7 @@ Thank you for visiting Makeup Samrajya. Stay connected with us on social media f
         <div className="footer-right">
           <h4>Contact Info</h4>
           <p>📞 +91 94057 31098</p>
-          <p>📧 Samrajya123@gmail.com</p>
+          <p>📧 Khushboomahajan799@gmail.com</p>
           <p>📍 Pune, India - 411002</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/makeup_samrajya?igsh=aGVwOGF2Mm5qM3V1" target="_blank" rel="noopener noreferrer"><FaInstagram size={28} /></a>

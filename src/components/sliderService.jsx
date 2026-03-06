@@ -35,7 +35,7 @@ const SliderService = () => {
         </p>
         <button className="hero-btn" onClick={handleBookAppointment}>
           Book Appointment
-        </button>
+        </button> 
       </div>
     </section>
   );

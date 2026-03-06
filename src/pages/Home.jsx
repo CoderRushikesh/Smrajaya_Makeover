@@ -6,7 +6,7 @@ import BridalSection from '../components/BridalSection';
 import BridalShowcase from '../components/bridalLooks';
 import VideoGrid from '../components/videoGrid';
 import CoursesSection from '../components/CoursesSection';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import WhatsAppButton from '../components/whatsApp';
 
 export default function Home() {
