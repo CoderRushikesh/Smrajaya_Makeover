@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/footer.css";
+import "../css/Footer.css";
 import { FaLinkedin, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { SiTurkishairlines } from "react-icons/si";  // Import icon
 

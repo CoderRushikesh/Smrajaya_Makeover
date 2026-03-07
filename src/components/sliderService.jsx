@@ -1,6 +1,6 @@
 import React from "react";
 import sampleVideo from "../videos/ServicePage.mp4";
-import "../css/SlideService.css";
+import "../css/SliderService.css";
 
 const SliderService = () => {
   const whatsappNumber = "918788661412"; // your WhatsApp number (no + sign)

@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import HeroSlider from '../components/HeroSlier';
+import HeroSlider from '../components/HeroSlider';
 import Self from '../components/Self';
 import BridalSection from '../components/BridalSection';
 import BridalShowcase from '../components/BridalLooks';

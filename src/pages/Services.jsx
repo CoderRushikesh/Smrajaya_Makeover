@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import SliderService from '../components/SliderService';
 import BridalLooks from '../components/BridalLooks';
 import CoursesSection from '../components/CoursesSection';
-// import HeroStatic from '../components/serviceHero';
 import ServiceHero from '../components/ServiceHero';
 import WhatsAppButton from '../components/WhatsApp';
 import VideoGrid from '../components/VideoGrid';

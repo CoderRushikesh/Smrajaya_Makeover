@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/BridalShocase.css";
+import "../css/BridalLooks.css";
 import img1 from "../image/m1.png";
 import img2 from "../image/m2.png";
 import img3 from "../image/m3.jpg";
