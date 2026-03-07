@@ -10,6 +10,7 @@ const WhatsAppButton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
+      {/* wehqiwe */}
       <FaWhatsapp size={40} color="#25D366" />
     </a>
   );

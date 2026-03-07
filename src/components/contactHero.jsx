@@ -8,7 +8,7 @@ const ContactHero = () => {
       className="hero-slider"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      
+      {/*  */}
       
     </section>
   );

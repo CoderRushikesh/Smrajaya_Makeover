@@ -27,9 +27,13 @@ const MapSection = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+   {/* changes  */}
+
       </div>
     </section>
   );
 };
+
+// changes 
 
 export default MapSection;

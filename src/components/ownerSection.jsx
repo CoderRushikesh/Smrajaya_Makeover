@@ -11,7 +11,7 @@ const OwnerSection = () => {
           <img src={ownerPhoto} alt="Owner" />
         </div>
 
-        {/* Right side: Owner info */}
+        {/*seowr*/}
         <div className="owner-info">
           <h2>Meet Our Founder</h2>
           <p>

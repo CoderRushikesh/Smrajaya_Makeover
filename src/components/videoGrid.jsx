@@ -9,7 +9,7 @@ const videos = [
   { src: customer2, name: "💗💗💗💗💗" },
   { src: customer3, name: "😇😇😇😇😇" },
  
-  // Add more videos here
+  // Add more videos herehworiew
 ];
 
 const VideoGrid = () => {

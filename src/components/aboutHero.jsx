@@ -8,7 +8,7 @@ const AboutHero = () => {
       className="hero-slider"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      
+      {/* about hero */}
       
     </section>
   );

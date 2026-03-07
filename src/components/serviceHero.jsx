@@ -9,7 +9,7 @@ const ServiceHero = () => {
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       
-      
+      {/* jnnksad */}
     </section>
   );
 };

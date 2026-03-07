@@ -46,8 +46,10 @@ const BridalLooks = () => {
           </div>
         ))}
       </div>
+
+      {/* changes  */}
     </section>
   );
-};
+};  
 
 export default BridalLooks;
