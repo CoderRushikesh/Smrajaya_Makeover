@@ -2,11 +2,11 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import CertificateSection from '../components/CertificateSection'
-import AboutHero from '../components/aboutHero'
-import Self from '../components/self';
-import OwnerSection from '../components/ownerSection'
-import TeamSection from '../components/teamMem'
-import WhatsAppButton from '../components/whatsApp'
+import AboutHero from '../components/AboutHero'
+import Self from '../components/Self';
+import OwnerSection from '../components/OwnerSection'
+import TeamSection from '../components/TeamMem'
+import WhatsAppButton from '../components/WhatsApp'
 
 export default function about() {
   return (

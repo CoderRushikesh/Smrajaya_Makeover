@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ContactHero from '../components/contactHero'
-import MapSection from '../components/mapSection'
-import WhatsAppButton from '../components/whatsApp'
+import ContactHero from '../components/ContactHero'
+import MapSection from '../components/MapSection'
+import WhatsAppButton from '../components/WhatsApp'
 import ContactIcons from '../components/contactIcons'
 
 export default function Contact() {

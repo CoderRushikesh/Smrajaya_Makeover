@@ -2,6 +2,7 @@
   background: #111;
   color: #eee;
   padding: 40px 20px;
+  margin-top: 34px;
 }
 
 .footer-content {
@@ -58,4 +59,21 @@
   padding-top: 15px;
   font-size: 0.9rem;
   color: #aaa;
+}
+.footer-bottom p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* spacing between items */
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  color: #eee;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #f05454;
+  transform: scale(1.2);
 }

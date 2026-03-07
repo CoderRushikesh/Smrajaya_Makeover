@@ -11,8 +11,8 @@ const Footer = () => {
         
         {/* Left Section */}
         <div className="footer-left">
-          
-         <h3 style={{ marginRight: "8px", color: "white", width:"50px", height:"40px" }}>
+          <SiTurkishairlines style={{  marginRight: "8px", color: "balck" , width:"50px" , height:"40px" }}/> 
+         <h3 >
   Samrajya Makeover
 </h3>
 
@@ -37,7 +37,7 @@ Thank you for visiting Makeup Samrajya. Stay connected with us on social media f
           <h4>Contact Info</h4>
           <p>📞 +91 94057 31098</p>
           <p>📧 Khushboomahajan799@gmail.com</p>
-          <p>📍 Pune, India - 411002</p>
+          <p>📍 Jaisalmer Rajasthan, India - 345001</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/makeup_samrajya?igsh=aGVwOGF2Mm5qM3V1" target="_blank" rel="noopener noreferrer"><FaInstagram size={28} /></a>
             <a href="https://wa.me/9405731098?text=Hello%20I%20saw%20your%20website" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={28} /></a>
@@ -47,9 +47,29 @@ Thank you for visiting Makeup Samrajya. Stay connected with us on social media f
       </div>
 
       {/* Bottom Section */}
-      <div className="footer-bottom">
-        <p>Designed With ❤️ By Rushikesh Kamble | Mobile: 7709 200 299 | Email: rushikamble462@gmail.com</p>
-      </div>
+    {/* Bottom Section */}
+{/* Bottom Section */}
+<div className="footer-bottom">
+  <p>
+    Designed With ❤️ By <strong>Rushikesh Kamble</strong> | 
+    Mobile: <a href="tel:+917709200299">7709 200 299</a> | 
+    Email: <a href="mailto:rushikamble462@gmail.com">rushikamble462@gmail.com</a> | 
+    <a 
+      href="https://www.instagram.com/ii_rishi_ll/?next=%2F" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <FaInstagram size={20} />
+    </a> 
+    <a 
+      href="https://wa.me/917709200299?text=Hello%20I%20saw%20your%20website" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <FaWhatsapp size={20} />
+    </a>
+  </p>
+</div>
     </footer>
   );
 };

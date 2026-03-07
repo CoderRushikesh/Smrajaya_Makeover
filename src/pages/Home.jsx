@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlier';
-import Self from '../components/self';
+import Self from '../components/Self';
 import BridalSection from '../components/BridalSection';
-import BridalShowcase from '../components/bridalLooks';
-import VideoGrid from '../components/videoGrid';
+import BridalShowcase from '../components/BridalLooks';
+import VideoGrid from '../components/VideoGrid';
 import CoursesSection from '../components/CoursesSection';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/whatsApp';
+import WhatsAppButton from '../components/WhatsApp';
 
 export default function Home() {
   return (
