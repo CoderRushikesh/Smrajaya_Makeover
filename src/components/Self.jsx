@@ -28,7 +28,10 @@ const Self = () => {
         Explore
       </button>
     </section>
-  );
+  );  
+
+
+  // add some commit 
 };
 
 export default Self;
