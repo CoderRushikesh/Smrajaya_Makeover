@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import SliderService from '../components/SliderService';
+import SliderService from '../components/SliderService'; // ✅ now resolves correctly
 import BridalLooks from '../components/BridalLooks';
 import CoursesSection from '../components/CoursesSection';
 import ServiceHero from '../components/ServiceHero';
@@ -11,16 +11,14 @@ import VideoGrid from '../components/VideoGrid';
 export default function Services() {
   return (
     <div>
-
-
       <Navbar />
       <ServiceHero />
       <SliderService style={{ marginTop: "60px", marginBottom: "60px" }} />
       <BridalLooks />
-      <VideoGrid/>
+      <VideoGrid />
       <CoursesSection />
-      <WhatsAppButton/>
+      <WhatsAppButton />
       <Footer />
     </div>
-  )
+  );
 }

@@ -3,17 +3,16 @@ import sampleVideo from "../videos/ServicePage.mp4";
 import "../css/SliderService.css";
 
 const SliderService = () => {
-  const whatsappNumber = "918788661412"; // your WhatsApp number (no + sign)
+  const whatsappNumber = "918788661412";
 
   const handleBookAppointment = () => {
     const message = `Hello, I am interested in booking bridal services at Samrajya Makeover. Please share more details.`;
-    const url = `https://wa.me/${9405731098}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
   return (
     <section className="slider-service">
-      {/* Left side: video */}
       <div className="video-wrapper">
         <video
           className="background-video"
@@ -24,8 +23,6 @@ const SliderService = () => {
           playsInline
         />
       </div>
-
-      {/* Right side: text */}
       <div className="text-wrapper">
         <h2>Our Bridal Services</h2>
         <p>
@@ -35,7 +32,7 @@ const SliderService = () => {
         </p>
         <button className="hero-btn" onClick={handleBookAppointment}>
           Book Appointment
-        </button> 
+        </button>
       </div>
     </section>
   );
