@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlider';
 import Self from '../components/Self';
@@ -12,15 +12,15 @@ import WhatsAppButton from '../components/WhatsApp';
 export default function Home() {
   return (
     <>
-    <Navbar/>
-     <HeroSlider/>
-        <Self/>
-       <BridalSection/>
-       <BridalShowcase/>
-       <VideoGrid />
-       <CoursesSection/>
-       <WhatsAppButton/>
-        <Footer/>
+      <Navbar/>
+      <HeroSlider/>
+      <Self/>
+      <BridalSection/>
+      <BridalShowcase/>
+      <VideoGrid />
+      <CoursesSection/>
+      <WhatsAppButton/>
+      <Footer/>
     </>
-  )
+  );
 }
