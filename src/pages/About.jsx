@@ -16,8 +16,8 @@ export default function about() {
      
       <CertificateSection/>
       <OwnerSection/>
-      <Self/>
       <TeamSection/>
+      <Self/>
       <WhatsAppButton/>
         <Footer/>
     </div>

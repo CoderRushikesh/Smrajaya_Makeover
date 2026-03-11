@@ -37,3 +37,35 @@
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+.certificate-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 60px 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+/* Mobile view: stack vertically */
+@media (max-width: 768px) {
+  .certificate-section {
+    flex-direction: column;   /* stack items vertically */
+    text-align: center;       /* center text for better look */
+  }
+
+  .certificate-wrapper {
+    margin-bottom: 20px;      /* spacing between image and text */
+  }
+
+  .certificate-img {
+    max-width: 90%;           /* make image larger on mobile */
+    height: auto;
+  }
+
+  .certificate-text {
+    width: 100%;              /* text takes full width */
+  }
+}

@@ -28,10 +28,45 @@
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #f05454; /* accent color */
 }
 
 .team-info p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+/* Medium screens (≤1258px): stack vertically */
+@media (max-width: 1258px) {
+  .team-wrapper {
+    flex-direction: column;   /* stack vertically */
+    text-align: center;
+    align-items: center;      /* center children horizontally */
+  }
+
+  .team-photo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;  /* center image */
+    width: 100%;
+  }
+
+  .team-photo img {
+    max-width: 80%;           /* keep image large */
+    margin: 0 auto;
+  }
+
+  .team-info {
+    width: 100%;
+    max-width: 700px;         /* prevent text from stretching too wide */
+    margin: 0 auto;
+  }
+}
+
+/* Mobile view (≤768px): image even larger */
+@media (max-width: 768px) {
+  .team-photo img {
+    max-width: 90%;
+  }
 }

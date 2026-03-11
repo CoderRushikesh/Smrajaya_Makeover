@@ -5,15 +5,18 @@ import ownerPhoto from "../image/owner.jpg"; // replace with actual owner image
 const OwnerSection = () => {
   return (
     <section className="owner-section">
+
+         <h2>Meet Our Founder</h2>
       <div className="owner-wrapper">
-        {/* Left side: Owner photo */}
+       
+     
         <div className="owner-photo">
           <img src={ownerPhoto} alt="Owner" />
         </div>
 
         {/*seowr*/}
         <div className="owner-info">
-          <h2>Meet Our Founder</h2>
+        
           <p>
             <strong>Khusbu Ma'am</strong>, the visionary behind our beauty parlour,
             is a passionate artist dedicated to enhancing natural beauty with

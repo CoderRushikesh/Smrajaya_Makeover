@@ -6,17 +6,27 @@ import img3 from "../image/m3.jpg";
 import img4 from "../image/m4.png";
 
 const bridalLooks1 = [
-  { image: img1, title: "North Indian Bridal Makeup", info: "Traditional North Indian bridal style with bold eyes and jewelry.", price: "₹15,000" },
-  { image: img2, title: "South Indian Bridal Makeup", info: "Classic South Indian look with temple jewelry and rich colors.", price: "₹18,000" },
-  { image: img3, title: "Maharashtrian Bridal Makeup", info: "Elegant Maharashtrian bridal style with nath and green bangles.", price: "₹14,000" },
-  { image: img4, title: "Haldi Ceremony Look", info: "Fresh floral jewelry and natural glow for Haldi function.", price: "₹10,000" },
+  { image: img1, title: "Retro makeup" },
+  { image: img2, title: "Editorial makeup" },
+  { image: img3, title: "Fashion makeup" },
+  { image: img4, title: "Fantasy Makeup"  },
+  { image: img4, title: "Prostheetic Makeup" },
+  { image: img4, title: "Pre-wedding Makeup" },
+  { image: img4, title: "Bridal makeup", },
+  { image: img4, title: "Traditional makeup"  },
+  { image: img4, title: "Airbrush makeup"  },
+  { image: img4, title: "Smoky eyes makeup" },
+  { image: img4, title: "Decor makeup" },
+  { image: img4, title: "Colour photography , makeup"},
+  { image: img4, title: "Sangeet Makeup"  },
+  { image: img4, title: "Haldi Makeup"  },
 ];
 
 const BridalLooks = () => {
   const whatsappNumber = "918788661412"; // without + sign
 
   const handleBookNow = (look) => {
-    const message = `Hello, I am interested in booking the ${look.title}. The price mentioned is ${look.price}. Please share more details.`;
+    const message = `Hello ma'am i am coming through your website , I am interested in booking the ${look.title}.  Please share more details.`;
     const url = `https://wa.me/${9405731098}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
@@ -35,7 +45,7 @@ const BridalLooks = () => {
               </div>
             </div>
             <div className="card-footer">
-              <p className="price">Price: {look.price}</p>
+              <p className="price"> Confirm your booking with afordable price  </p>
               <button 
                 className="book-btn" 
                 onClick={() => handleBookNow(look)}
