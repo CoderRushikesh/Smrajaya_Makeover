@@ -7,7 +7,7 @@ import BridalShowcase from '../components/BridalLooks';
 import VideoGrid from '../components/VideoGrid';
 import CoursesSection from '../components/CoursesSection';
 import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsApp';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function Home() {
   return (

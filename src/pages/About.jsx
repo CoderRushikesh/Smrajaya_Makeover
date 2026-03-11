@@ -6,7 +6,7 @@ import AboutHero from '../components/AboutHero';
 import Self from '../components/Self';
 import OwnerSection from '../components/OwnerSection';
 import TeamSection from '../components/TeamSection';
-import WhatsAppButton from '../components/WhatsApp';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 export default function about() {
   return (

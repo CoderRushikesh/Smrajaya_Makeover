@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ContactHero from '../components/ContactHero'
 import MapSection from '../components/MapSection'
-import WhatsAppButton from '../components/WhatsApp'
-import ContactIcons from '../components/ContactIcons'
+import WhatsAppButton from '../components/WhatsAppButton'
+import ContactIcons from '../components/ContactIcons';
 
 export default function Contact() {
   return (
