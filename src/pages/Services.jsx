@@ -5,7 +5,7 @@ import SliderService from '../components/SliderService'; // ✅ now resolves cor
 import BridalLooks from '../components/BridalLooks';
 import CoursesSection from '../components/CoursesSection';
 import ServiceHero from '../components/ServiceHero';
-import WhatsAppButton from '../components/WhatsApp';
+import WhatsAppButton from '../components/WhatsAppButton';
 import VideoGrid from '../components/VideoGrid';
 
 export default function Services() {
