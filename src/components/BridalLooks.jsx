@@ -6,6 +6,7 @@ import img3 from "../image/sangeet1.jpg";
 import img4 from "../image/haldi1.jpg";
 import img5 from "../image/mainMakeup.jpg";
 import img6 from "../image/fashion1.jpg";
+import img15 from "../image/Event1.jpg";
 import img7 from "../image/traditional.jpg";
 import img8 from "../image/Retro1.jpg";
 import img9 from "../image/Editorial1.jpg";
@@ -23,6 +24,7 @@ const bridalLooks1 = [
   { image: img4, title: "Haldi Makeup"  },
   { image: img5, title: "Airbrush makeup"  },
   { image: img6, title: "Fashion makeup" },
+  { image : img15, title : "Event-Look makeup"},
   { image: img7, title: "Traditional makeup"  },
   { image: img8, title: "Retro makeup" },
   { image: img9, title: "Editorial makeup" },
