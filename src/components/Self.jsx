@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Self.css";
-import img1 from "../image/t2.jpg";
+import img1 from "../image/mainMakeup.jpg";
 
 const Self = () => {
   return (
@@ -23,9 +23,9 @@ const Self = () => {
       </p>
       <button
         className="about-btn"
-        onClick={() => (window.location.href = "/services")}
+        // onClick={() => (window.location.href = "/services")}
       >
-        Explore
+       Thankhs for Visiting our site 🙏
       </button>
     </section>
   );  

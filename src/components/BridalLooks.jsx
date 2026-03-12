@@ -1,25 +1,36 @@
 import React from "react";
 import "../css/BridalLooks.css";
-import img1 from "../image/m1.png";
-import img2 from "../image/m2.png";
-import img3 from "../image/m3.jpg";
-import img4 from "../image/m4.png";
+import img1 from "../image/Bridal2.jpg";
+import img2 from "../image/preWedding1.jpg";
+import img3 from "../image/sangeet1.jpg";
+import img4 from "../image/haldi1.jpg";
+import img5 from "../image/mainMakeup.jpg";
+import img6 from "../image/fashion1.jpg";
+import img7 from "../image/traditional.jpg";
+import img8 from "../image/Retro1.jpg";
+import img9 from "../image/Editorial1.jpg";
+import img10 from "../image/Prosthetic1.jpg";
+import img11 from "../image/smokee1.jpg";
+import img12 from "../image/decor1.jpg";
+import img13 from "../image/color1.jpg";
+import img14 from "../image/fantasy1.jpg";
+
 
 const bridalLooks1 = [
-  { image: img1, title: "Retro makeup" },
-  { image: img2, title: "Editorial makeup" },
-  { image: img3, title: "Fashion makeup" },
-  { image: img4, title: "Fantasy Makeup"  },
-  { image: img4, title: "Prostheetic Makeup" },
-  { image: img4, title: "Pre-wedding Makeup" },
-  { image: img4, title: "Bridal makeup", },
-  { image: img4, title: "Traditional makeup"  },
-  { image: img4, title: "Airbrush makeup"  },
-  { image: img4, title: "Smoky eyes makeup" },
-  { image: img4, title: "Decor makeup" },
-  { image: img4, title: "Colour photography , makeup"},
-  { image: img4, title: "Sangeet Makeup"  },
+  { image: img1, title: "Bridal makeup", },
+  { image: img2, title: "Pre-wedding Makeup" },
+  { image: img3, title: "Sangeet Makeup"  },
   { image: img4, title: "Haldi Makeup"  },
+  { image: img5, title: "Airbrush makeup"  },
+  { image: img6, title: "Fashion makeup" },
+  { image: img7, title: "Traditional makeup"  },
+  { image: img8, title: "Retro makeup" },
+  { image: img9, title: "Editorial makeup" },
+  { image: img10, title: "Prostheetic Makeup" },
+  { image: img11, title: "Smoky eyes makeup" },
+  { image: img12, title: "Decor makeup" },
+  { image: img13, title: "Colour photography , makeup"},
+  { image: img14, title: "Fantasy Makeup"  },
 ];
 
 const BridalLooks = () => {
