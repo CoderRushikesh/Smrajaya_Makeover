@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/serviceHero.css";
+import "../css/ServiceHero.css";
 import heroImage from "../image/ContactUs.png"; // pick your single image
 
 const ContactHero = () => {
