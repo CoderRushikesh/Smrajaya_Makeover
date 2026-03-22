@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/Signup.css";
+import Navbar from "../components/Navbar";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -11,18 +12,51 @@ const Signup = () => {
     city: ""
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Normally you'd send this to backend API
-    console.log("Signup data:", formData);
-    alert("Signup successful!");
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:8082/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Signup successful!");
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          password: "",
+          address: "",
+          city: ""
+        });
+        window.location.href = "/Login";
+      } else {
+        const errorText = await response.text();
+        alert("Signup failed: " + errorText);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
+<div>
+
+
+    <Navbar/>
     <section className="signup-section">
       <div className="signup-wrapper">
         <h2>Create Account</h2>
@@ -37,7 +71,7 @@ const Signup = () => {
               placeholder="Enter your full name"
               value={formData.name}
               onChange={handleChange}
-            />
+              />
           </div>
 
           <div className="form-group">
@@ -50,7 +84,7 @@ const Signup = () => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-            />
+              />
           </div>
 
           <div className="form-group">
@@ -63,7 +97,7 @@ const Signup = () => {
               placeholder="Enter your mobile number"
               value={formData.mobile}
               onChange={handleChange}
-            />
+              />
           </div>
 
           <div className="form-group">
@@ -76,7 +110,7 @@ const Signup = () => {
               placeholder="Enter your password"
               value={formData.password}
               onChange={handleChange}
-            />
+              />
           </div>
 
           <div className="form-group">
@@ -89,7 +123,7 @@ const Signup = () => {
               placeholder="Enter your address"
               value={formData.address}
               onChange={handleChange}
-            />
+              />
           </div>
 
           <div className="form-group">
@@ -102,13 +136,16 @@ const Signup = () => {
               placeholder="Enter your city"
               value={formData.city}
               onChange={handleChange}
-            />
+              />
           </div>
 
-          <button type="submit" className="btn-signup">SIGN UP</button>
+          <button type="submit" className="btn-signup" disabled={loading}>
+            {loading ? "Signing up..." : "SIGN UP"}
+          </button>
         </form>
       </div>
     </section>
+              </div>
   );
 };
 
