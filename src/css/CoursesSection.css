@@ -1,52 +1,60 @@
 .courses-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: 70px 30px;
   max-width: 1200px;
   margin: auto;
-  background: linear-gradient(135deg, #fff, #f9f9f9);
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #fff, #ffe6e6, #fff);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  animation: fadeInUp 1s ease forwards;
 }
 
+/* Heading */
 .courses-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #FF0000;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* Description */
 .courses-description {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #333;
   margin-bottom: 30px;
+  animation: fadeIn 1.2s ease forwards;
 }
 
+/* Button */
 .courses-btn {
-  padding: 12px 28px;
-  background: #FF0000;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #FF0000, #cc0000);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .courses-btn:hover {
-  background: #cc0000;
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(255,0,0,0.4);
 }
 
+/* Video Section */
 .courses-video {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
   display: flex;
   justify-content: center;
 }
@@ -54,35 +62,42 @@
 .video-card {
   position: relative;
   display: inline-block;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .video-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .video-thumbnail {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
 }
 
+.video-card:hover .video-thumbnail {
+  transform: scale(1.1);
+}
+
+/* Overlay */
 .video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(255,0,0,0.6);
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .video-card:hover .video-overlay {
@@ -90,7 +105,51 @@
 }
 
 .video-overlay span {
-  margin-top: 8px;
-  font-size: 1.2rem;
+  margin-top: 10px;
+  font-size: 1.3rem;
   font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .courses-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .courses-heading {
+    font-size: 1.6rem;
+  }
+  .courses-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-heading {
+    font-size: 1.4rem;
+  }
+  .courses-description {
+    font-size: 0.9rem;
+  }
+  .courses-btn {
+    width: 100%;
+  }
 }

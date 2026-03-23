@@ -40,7 +40,7 @@ const BridalLooks = () => {
 
   const handleBookNow = (look) => {
     const message = `Hello ma'am i am coming through your website , I am interested in booking the ${look.title}.  Please share more details.`;
-    const url = `https://wa.me/${9405731098}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${+919405731098}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
@@ -58,7 +58,7 @@ const BridalLooks = () => {
               </div>
             </div>
             <div className="card-footer">
-              <p className="price"> Confirm your booking with afordable price  </p>
+              {/* <p className="price"> Confirm your booking with afordable price  </p> */}
               <button 
                 className="book-btn" 
                 onClick={() => handleBookNow(look)}

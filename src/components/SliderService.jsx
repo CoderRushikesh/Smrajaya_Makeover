@@ -1,9 +1,10 @@
 import React from "react";
 import sampleVideo from "../videos/ServicePage.mp4";
+import showcaseImage from "../image/a5.jpg"; // replace with your image
 import "../css/SliderService.css";
 
 const SliderService = () => {
-  const whatsappNumber = "918788661412";
+  const whatsappNumber = "+919405731098";
 
   const handleBookAppointment = () => {
     const message = `Hello, I am interested in booking bridal services at Samrajya Makeover. Please share more details.`;
@@ -11,21 +12,18 @@ const SliderService = () => {
     window.open(url, "_blank");
   };
 
-
-  // woeriwor
-
   return (
     <section className="slider-service">
-      <div className="video-wrapper">
-        <video
-          className="background-video"
-          src={sampleVideo}
-          autoPlay
-          loop
-          muted
-          playsInline
+      {/* Image Section */}
+      <div className="image-wrapper">
+        <img
+          src={showcaseImage}
+          alt="Bridal Showcase"
+          className="showcase-image fade-in"
         />
       </div>
+
+      {/* Text Section */}
       <div className="text-wrapper">
         <h2>Our Bridal Services</h2>
         <p>
@@ -36,6 +34,18 @@ const SliderService = () => {
         <button className="hero-btn" onClick={handleBookAppointment}>
           Book Appointment
         </button>
+      </div>
+
+      {/* Video Section */}
+      <div className="video-wrapper">
+        <video
+          className="background-video"
+          src={sampleVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
       </div>
     </section>
   );

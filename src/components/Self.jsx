@@ -7,7 +7,7 @@ const Self = () => {
     <section className="about-section">
       <h1 className="about-title">SAMRAJYA</h1>
       <p className="about-tagline">
-        Best bridal makeup artist from Pune, Mumbai (India)
+        Best bridal makeup artist from Pune, Mumbai Jaisalmer , Rajsthan (India)
       </p>
       <div className="about-images">
         <img src={img1} alt="Bridal look 1" />

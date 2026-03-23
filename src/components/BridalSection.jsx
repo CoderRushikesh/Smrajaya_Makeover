@@ -1,12 +1,12 @@
 import React from "react";
 import '../css/BridalSection.css';
-import bridalImg from "../image/m3.jpg"; // replace with your actual image
+import bridalImg from "../image/m3.jpeg"; // replace with your actual image
 
 const BridalSection = () => {
   return (
     <section className="bridal-section">
       <h1 className="bridal-title">
-        BEST BRIDAL MAKEUP ARTIST IN PUNE MUMBAI INDIA
+        BEST BRIDAL MAKEUP ARTIST IN PUNE MUMBAI , JAISALMER  , RAJASTHAN INDIA
       </h1>
 
       <div className="bridal-content">
