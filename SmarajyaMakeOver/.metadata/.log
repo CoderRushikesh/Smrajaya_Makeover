@@ -1,0 +1,977 @@
+!SESSION 2026-03-22 15:40:11.853 -----------------------------------------------
+eclipse.buildId=4.37.0.202509051843
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\Users\rushi\Desktop\REACT_JS\SmarajyaMakeOver\.metadata\.bak_0.log
+Created Time: 2026-03-22 16:13:31.221
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:31.222
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:31.223
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:31.384
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:31.385
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:31.512
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:31.512
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:31.786
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:31.787
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:32.186
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:32.187
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:33.150
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:33.151
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:33.427
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:33.428
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:33.607
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:33.607
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:33.813
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:33.814
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:34.095
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:34.095
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:34.659
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:34.660
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:34.717
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:34.717
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:34.919
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:34.919
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:35.144
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:35.145
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:35.354
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:35.355
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:35.435
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:35.435
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-03-22 16:13:38.305
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchError: getaddrinfo ENOTFOUND api.github.com
+    at fetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at cachingFetch (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:288:16)
+    at HU.fetch (C:\snapshot\copilot-client\lib\src\network\helix.ts:160:22)
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:32:22)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at Yee.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at gt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at gt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  erroredSysCall: 'getaddrinfo'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-03-22 16:13:38.305
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:176)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: getaddrinfo ENOTFOUND api.github.com
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:419)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:13:40.022
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:13:40.024
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:13:40.025
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:13:40.026
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:20.753
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:20.754
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:20.755
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:20.756
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 16:27:23.658
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:32.107
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:32.108
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:32.109
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:27:32.110
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:27:34.012
+!MESSAGE [Info]	[fetchCompletions] Request 279a68d4-59f5-4d56-b88f-6204dd5bbaf0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 3390.6103000002913ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:27:34.030
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:33:12.272
+!MESSAGE [Info]	[fetchCompletions] Request 645254b4-0aff-4088-897b-4e4fadccf06a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1366.4620000002906ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:33:12.288
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:33:19.929
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:33:19.932
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:33:19.933
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:33:19.934
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:48:36.013
+!MESSAGE [Info]	[fetchCompletions] Request 54aa7a4c-119a-45f7-80e5-7d450dc6e16f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1118.1722999997437ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:48:36.015
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:48:49.926
+!MESSAGE [Info]	[fetchCompletions] Request d684a1d5-4a33-4948-9380-4f3227b98990 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 551.1675999998115ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 16:48:49.994
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:48:50.922
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:48:50.925
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:48:50.926
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 16:48:50.926
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:02:35.853
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:02:35.855
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:02:35.857
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:02:35.859
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:02:35.898
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:02:36.830
+!MESSAGE [Info]	[fetchCompletions] Request 573ecd84-ab70-42da-bbf1-3a068c9329e7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1216.6372000006959ms
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:04:45.326
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:04:51.668
+!MESSAGE [Info]	[fetchCompletions] Request f8f70055-5750-4688-9ad5-5ae4bb4f24c4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 11188.774999999441ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:04:51.712
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:04:54.493
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:04:54.495
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:04:54.497
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:04:54.498
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:04:56.542
+!MESSAGE [Info]	[fetchCompletions] Request d67d3ba9-0865-4da3-a7c0-c9e2ba3beb46 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 4072.382600000128ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:04:56.611
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:56.423
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:56.425
+!MESSAGE [Info]	[fetchCompletions] Request 6c3c79bd-3981-42dc-97a5-eee7b5c2714b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1386.2827000003308ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:57.088
+!MESSAGE [Info]	[fetchCompletions] Request f65908d1-0ad6-43d8-9227-8ae40317f05e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 622.5921999998391ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:57.197
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:57.366
+!MESSAGE [Info]	[copilotModels] Filtering out model with only /responses endpoint: gpt-5.2-codex
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:57.367
+!MESSAGE [Info]	[copilotModels] Filtering out model with only /responses endpoint: gpt-5.4
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:57.369
+!MESSAGE [Info]	[copilotModels] Filtering out model with only /responses endpoint: gpt-5.3-codex
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:58.061
+!MESSAGE [Info]	[fetchCompletions] Request d1d385b0-a424-488b-8d1e-6bf75bfb2fd2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 628.587899999693ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:58.220
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:58.953
+!MESSAGE [Info]	[fetchCompletions] Request 9ac89948-615a-428a-b4e5-5333a73adf35 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 676.8963999999687ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:58.965
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:10:59.803
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:11:02.002
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:11:05.760
+!MESSAGE [Info]	[fetchCompletions] Request c6adb8e5-01cf-435d-b2c8-f68470ce3770 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 561.4341000001878ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:11:05.816
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:12:08.685
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:12:08.686
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:12:08.687
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:12:08.688
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:22:11.151
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:22:11.154
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:22:11.155
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-03-22 17:22:11.156
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:22:11.756
+!MESSAGE [Info] Completion request timed out after 5000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:22:13.878
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-22 17:22:13.879
+!MESSAGE [Info]	[fetchCompletions] Request 4bb2298b-9062-4967-8e10-f2d2e4237855 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 7015.419900000095ms
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.114
+!MESSAGE [Info] Document is null for editor: LoginRequestDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.122
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/dto/LoginRequestDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.221
+!MESSAGE [Info] Document is null for editor: SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.222
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Config/SecurityConfig.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.517
+!MESSAGE [Info] Document is null for editor: JwtService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.518
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Service/JwtService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.620
+!MESSAGE [Info] Document is null for editor: UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.620
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Interfaces/UserRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.648
+!MESSAGE [Info] Document is null for editor: User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.650
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Entity/User.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.757
+!MESSAGE [Info] Document is null for editor: LoginResponseDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.757
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/dto/LoginResponseDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.785
+!MESSAGE [Info] Document is null for editor: JwtAuthFilter.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.787
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Config/JwtAuthFilter.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.824
+!MESSAGE [Info] Document is null for editor: UserRegistrationDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.825
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/dto/UserRegistrationDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.872
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.873
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.919
+!MESSAGE [Info] Document is null for editor: AuthController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-03-22 17:38:56.920
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/rushi/Desktop/REACT_JS/SmarajyaMakeOver/MakeOver/src/main/java/com/Samrajya/MakeOver/Controller/AuthController.java

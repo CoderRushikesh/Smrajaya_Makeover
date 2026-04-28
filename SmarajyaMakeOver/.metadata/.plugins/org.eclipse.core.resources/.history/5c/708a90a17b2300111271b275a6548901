@@ -1,0 +1,30 @@
+package com.Samrajya.MakeOver.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.Samrajya.MakeOver.Entity.User;
+import com.Samrajya.MakeOver.Interfaces.UserRepository;
+import com.Samrajya.MakeOver.dto.UserRegistrationDTO;
+
+@Service
+public class UserService {
+
+	private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    public User register(UserRegistrationDTO dto) {
+        User user = new User();
+        user.setName(dto.getName());
+        user.setEmail(dto.getEmail());
+        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        user.setPhoneNumber(dto.getPhoneNumber());
+        user.setAddress(dto.getAddress());
+        user.setCity(dto.getCity());
+        return userRepository.save(user);
+	
+}}

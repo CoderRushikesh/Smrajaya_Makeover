@@ -1,0 +1,5 @@
+package com.Samrajya.MakeOver.dto;
+
+public class LoginResponseDTO {
+
+}

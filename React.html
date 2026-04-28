@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Myself</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React and ReactDOM via CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel for JSX support -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Your React code -->
+  <!-- <script type="text/babel">
+    function App() {
+      return (
+        <div>
+          <h1>Hello React without npm!</h1>
+          <p>This is running directly from CDN imports.</p>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script> -->
+
+   <!-- - steps are 1 needs to declare the script and type needs to declare as <text>
+   becaue it is labrary which is used to run the run html inside script 
+    jsx , then declare a function and that funtion should return something inside 
+    return we can declare the html elements 
+
+   - needs to declare the const root element = ReactDom.CreateRoot(docuemnt.getElementById("root"));
+   - then root.render( ) function needs to call  -->
+
+  <script type="text/babel">
+     function App(){
+       return(
+       <div> 
+        <p>this is first para </p>
+        <button> Goog Job ! </button>
+        
+        </div>
+       );
+
+     }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+
+
+  </script>
+
+</body>
+</html>
