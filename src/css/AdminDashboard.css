@@ -1,0 +1,99 @@
+.ad-shell { display: flex; min-height: 100vh; background: #f4f1f8; font-family: "Segoe UI", system-ui, sans-serif; color: #2a1a33; }
+.ad-side { width: 250px; background: linear-gradient(180deg, #2a1245 0%, #4a1c5e 60%, #7b1f5c 100%); color: #fff; padding: 26px 18px; display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; }
+.ad-brand { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 34px; }
+.ad-brand span { display: block; font-size: 0.75rem; letter-spacing: 4px; font-weight: 500; color: #f4a6c9; text-transform: uppercase; }
+.ad-side nav { display: flex; flex-direction: column; gap: 6px; }
+.ad-side button, .ad-side a { display: flex; align-items: center; gap: 12px; width: 100%; padding: 12px 14px; border: none; background: transparent; color: #e6d7f0; border-radius: 12px; cursor: pointer; font-size: 0.95rem; text-decoration: none; text-align: left; transition: background 0.2s; }
+.ad-side button:hover, .ad-side a:hover { background: rgba(255, 255, 255, 0.1); }
+.ad-side button.on { background: linear-gradient(135deg, #e91e63, #ab47bc); color: #fff; box-shadow: 0 8px 20px rgba(233, 30, 99, 0.35); }
+.ad-side b { margin-left: auto; background: rgba(255, 255, 255, 0.18); padding: 2px 9px; border-radius: 99px; font-size: 0.75rem; }
+.ad-side b.alert { background: #ffca28; color: #4a2c00; }
+.ad-side-foot { margin-top: auto; display: flex; flex-direction: column; gap: 4px; }
+
+.ad-main { flex: 1; padding: 30px 34px; min-width: 0; }
+.ad-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 26px; flex-wrap: wrap; }
+.ad-top h1 { font-size: 1.7rem; font-weight: 800; }
+.ad-top p { color: #7a6f85; font-size: 0.88rem; margin-top: 2px; }
+.ad-refresh, .ad-export { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid #e4dbe9; padding: 10px 16px; border-radius: 12px; cursor: pointer; font-weight: 600; color: #4a1c5e; }
+.ad-refresh:hover, .ad-export:hover { background: #f8effc; }
+.spin { animation: adspin 0.9s linear infinite; }
+@keyframes adspin { to { transform: rotate(360deg); } }
+
+.ad-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; margin-bottom: 22px; }
+.ad-card { display: flex; gap: 16px; align-items: center; padding: 22px; border-radius: 20px; color: #fff; box-shadow: 0 14px 30px rgba(60, 20, 90, 0.18); transition: transform 0.2s; }
+.ad-card:hover { transform: translateY(-4px); }
+.ad-card.violet { background: linear-gradient(135deg, #5e35b1, #9c27b0); }
+.ad-card.rose { background: linear-gradient(135deg, #d81b60, #ff6f91); }
+.ad-card.amber { background: linear-gradient(135deg, #f57c00, #ffb300); }
+.ad-card.green { background: linear-gradient(135deg, #128c7e, #25d366); }
+.ad-card-icon { width: 52px; height: 52px; border-radius: 16px; background: rgba(255, 255, 255, 0.22); display: grid; place-items: center; font-size: 1.5rem; }
+.ad-card-val { font-size: 2.1rem; font-weight: 800; line-height: 1; }
+.ad-card-label { opacity: 0.92; margin-top: 4px; font-size: 0.9rem; }
+.ad-card-sub { font-size: 0.78rem; background: rgba(255, 255, 255, 0.22); display: inline-block; padding: 1px 9px; border-radius: 99px; margin-top: 6px; }
+
+.ad-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 18px; margin-bottom: 18px; }
+.ad-panel { background: #fff; border-radius: 20px; padding: 22px; box-shadow: 0 8px 24px rgba(60, 20, 90, 0.07); }
+.ad-panel h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; }
+.ad-panel-head { display: flex; justify-content: space-between; align-items: center; }
+.ad-panel-head button { background: none; border: none; color: #c2185b; cursor: pointer; font-weight: 600; }
+.ad-empty { color: #9a90a4; padding: 18px 0; text-align: center; }
+
+.ad-bars { display: flex; align-items: flex-end; gap: 12px; height: 190px; }
+.ad-bar { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; }
+.ad-bar .col { flex: 1; width: 100%; display: flex; align-items: flex-end; background: #f6f0fa; border-radius: 10px; overflow: hidden; }
+.ad-bar .col i { width: 100%; min-height: 4px; background: linear-gradient(180deg, #e91e63, #8e24aa); border-radius: 10px; transition: height 0.5s; }
+.ad-bar .n { font-size: 0.8rem; font-weight: 700; margin-bottom: 4px; color: #6a1b9a; }
+.ad-bar .d { font-size: 0.75rem; color: #8b8294; margin-top: 6px; }
+.ad-hbar { margin-bottom: 14px; }
+.ad-hbar > div:first-child { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 5px; }
+.ad-hbar .track { height: 9px; background: #f2eaf7; border-radius: 99px; overflow: hidden; }
+.ad-hbar .track i { display: block; height: 100%; background: linear-gradient(90deg, #ab47bc, #ec407a); border-radius: 99px; }
+
+.ad-avatar { width: 46px; height: 46px; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 800; background: linear-gradient(135deg, #8e24aa, #e91e63); }
+.ad-avatar.sm { width: 38px; height: 38px; font-size: 0.9rem; }
+.ad-user-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f1ebf5; }
+.ad-user-row:last-child { border-bottom: none; }
+.ad-user-row div:nth-child(2) { flex: 1; min-width: 0; }
+.ad-user-row small, .ad-user-cell small { display: block; color: #8b8294; overflow: hidden; text-overflow: ellipsis; }
+.ad-time { margin-left: auto; color: #9a90a4; font-size: 0.78rem; white-space: nowrap; }
+
+.ad-msg { display: flex; gap: 14px; padding: 16px; border-radius: 16px; border: 1px solid #f0e8f5; margin-bottom: 12px; background: #fff; }
+.ad-msg.unread { background: #fdf4f9; border-color: #f4c6dc; box-shadow: inset 4px 0 0 #e91e63; }
+.ad-msg-body { flex: 1; min-width: 0; }
+.ad-msg-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.ad-msg p { margin: 6px 0; color: #3b2d44; word-break: break-word; }
+.ad-msg small { color: #8b8294; }
+.ad-chip { font-size: 0.68rem; font-weight: 700; padding: 2px 9px; border-radius: 99px; text-transform: uppercase; letter-spacing: 0.5px; }
+.ad-chip.wa { background: #dcf8e6; color: #0b7a3b; }
+.ad-chip.web { background: #ede4f7; color: #5e35b1; }
+.ad-chip.new { background: #ffe0ec; color: #c2185b; margin-left: 6px; }
+.ad-msg-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.ad-msg-actions a, .ad-msg-actions button { display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 10px; border: 1px solid #e4dbe9; background: #fff; cursor: pointer; font-size: 0.82rem; font-weight: 600; color: #4a1c5e; text-decoration: none; }
+.ad-msg-actions .wa { background: #25d366; color: #fff; border-color: #25d366; }
+.ad-msg-actions .danger { color: #c62828; }
+.ad-msg-actions button:hover { background: #f8effc; }
+
+.ad-toolbar { display: flex; gap: 12px; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; }
+.ad-search { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 220px; background: #faf6fc; border: 1.5px solid #e4dbe9; border-radius: 12px; padding: 0 14px; color: #8b8294; }
+.ad-search input { border: none; outline: none; background: transparent; padding: 11px 0; width: 100%; font-size: 0.95rem; }
+.ad-table-wrap { overflow-x: auto; }
+.ad-table { width: 100%; border-collapse: collapse; }
+.ad-table th { text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #8b8294; padding: 10px 12px; border-bottom: 2px solid #f1ebf5; }
+.ad-table td { padding: 12px; border-bottom: 1px solid #f6f1f9; vertical-align: middle; }
+.ad-table tr:hover td { background: #fcf9fe; }
+.ad-user-cell { display: flex; align-items: center; gap: 12px; }
+.ad-wa-btn { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #25d366; color: #fff; }
+.ad-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.ad-filters button { padding: 8px 16px; border-radius: 99px; border: 1px solid #e4dbe9; background: #fff; cursor: pointer; font-weight: 600; color: #6a4c7d; }
+.ad-filters button.on { background: linear-gradient(135deg, #8e24aa, #e91e63); color: #fff; border-color: transparent; }
+
+@media (max-width: 860px) {
+  .ad-shell { flex-direction: column; }
+  .ad-side { width: 100%; height: auto; position: static; padding: 16px; }
+  .ad-brand { margin-bottom: 12px; }
+  .ad-side nav { flex-direction: row; overflow-x: auto; }
+  .ad-side nav button { white-space: nowrap; width: auto; }
+  .ad-side-foot { flex-direction: row; margin-top: 8px; }
+  .ad-main { padding: 20px 14px; }
+  .ad-grid2 { grid-template-columns: 1fr; }
+}

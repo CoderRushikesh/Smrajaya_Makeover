@@ -107,3 +107,37 @@
     object-fit: cover;
   }
 }
+
+/* ---- Customer / Admin switch ---- */
+.login-tabs {
+  display: flex;
+  background: #f0f2f1;
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 22px;
+}
+.login-tabs button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.login-tabs button.active {
+  background: #fff;
+  color: #2e7d32;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.login-error {
+  background: #fdecea;
+  color: #b3261e;
+  border: 1px solid #f5c2be;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}

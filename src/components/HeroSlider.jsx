@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/HeroSlider.css";
-import slide1 from "../image/nav2.jpeg";
+import slide1 from "../image/nav3.jpeg";
 import slide2 from "../image/services.png";
 import slide3 from "../image/nav1.jpeg";
 
@@ -11,8 +11,8 @@ const HeroSlider = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+      setCurrent((prev) => (prev + 1) % slides.length); // increment properly
+    }, 5000); // change every 5 seconds
     return () => clearInterval(timer);
   }, []);
 

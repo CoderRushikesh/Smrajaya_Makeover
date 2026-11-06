@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../css/Signup.css";
 import Navbar from "../components/Navbar";
+import { API } from "../api";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8082/auth/register", {
+      const response = await fetch(`${API}/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

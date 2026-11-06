@@ -21,7 +21,7 @@ const OwnerSection = () => {
             <strong>Khusbu Ma'am</strong>, the visionary behind our beauty parlour,
             is a passionate artist dedicated to enhancing natural beauty with
             creativity and precision. With years of experience in bridal makeup
-            and event styling, Tejas has built a reputation for elegance,
+            and event styling, Khusbu has built a reputation for elegance,
             professionalism, and personalized care.
           </p>
           <p>
