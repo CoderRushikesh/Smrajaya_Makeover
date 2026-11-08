@@ -1,4 +1,5 @@
-export const API = import.meta.env.VITE_API_URL || "http://localhost:8082";
+// Backend base URL. Trailing slashes are removed so we never call "//auth/login"
+export const API = (import.meta.env.VITE_API_URL || "https://smrajyamakeover-backend.onrender.com").replace(/\/+$/, "");
 
 // Business WhatsApp number (country code + number, digits only)
 export const WHATSAPP_NUMBER = "919405731098";
