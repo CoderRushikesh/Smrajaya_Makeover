@@ -1,5 +1,0 @@
-package com.Samrajya.MakeOver.Service;
-
-public class JwtFilter {
-
-}
